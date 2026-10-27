@@ -1,0 +1,52 @@
+# Secrets and local environment
+/.env
+/.env.*
+!/.env.example
+docker/.env
+docker/.env.*
+!docker/.env.example
+apptainer/.env
+apptainer/.env.*
+!apptainer/.env.example
+
+# Runtime outputs
+final_results/
+sandboxes/
+sandbox_archives/
+logs/
+evidence/
+docs/
+repro/
+*.log
+*.out
+*.pid
+PROVENANCE.jsonl
+
+# Agent/editor-local metadata (not benchmark skill fixtures)
+AGENTS.md
+CLAUDE.md
+.codex/
+.claude/
+.gemini/
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated benchmark artifacts
+figures/
+scripts/plots/
+apptainer/cache/
+apptainer/smoke_sandbox/
+*.sif
+
